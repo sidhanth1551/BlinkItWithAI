@@ -39,8 +39,8 @@ const Navbar = () => {
         <Divider orientation="vertical" />
       </Flex>
       <Flex w="100%" justifyContent="space-between" alignItems="center">
-        <HStack>
-          <Flex justifyContent={"center"}  wrap={'wrap'}>
+        
+          <Flex justifyContent={"center"} wrap={"wrap"} mr={10}>
             <Heading size="20px">Deliver in 10 minutes</Heading>
             <Select placeholder="Select option" size="xs" h={4}>
               <option value="option1">Mumbai</option>
@@ -55,10 +55,13 @@ const Navbar = () => {
             </InputLeftElement>
             <Input placeholder="large size" size="lg" w="600px" />
           </InputGroup>
-        </HStack>
+         
+        <Button variant="outline" w={'160px'} mr={10}>
+         Login
+        </Button>
 
-        <Button variant="solid" colorScheme="blue">
-          Buy Latte
+        <Button variant="solid" w={'160px'} colorScheme="green" mr={10}>
+         My Cart
         </Button>
       </Flex>
     </Card>
